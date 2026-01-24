@@ -25,7 +25,9 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 body.dark {
     background-color: #F5F7FA;
 }
