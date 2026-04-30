@@ -484,6 +484,14 @@ gsap.from('.myskills h1',{
 }
 skillsanime()
 
+gsap.to(".gl", {
+  opacity:0,
+  duration: 0.4,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut"
+});
+
   function contactanime(){
     gsap.from('.contact h1',{
   opacity:0,
@@ -623,3 +631,5 @@ cursor();
   toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
   });
+
+

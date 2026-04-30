@@ -623,7 +623,7 @@ body.dark .box:hover{
 .myskills h1 { text-align:start; font-size: 2.5rem !important; margin-bottom: 30px; }
 .allskills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive Grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive Grid */
     gap: 30px;
 }
 
@@ -632,6 +632,7 @@ body.dark .box:hover{
     border-radius: 20px; border: 2px solid #3a3a3a; color: #a0a0a0;
     transition: all 0.3s ease;
     cursor: none;
+    position: relative;
 }
 body.dark .sbox { background-color: #FFFFFF; }
 
@@ -652,9 +653,106 @@ body.dark .sbox:hover{
   text-decoration: none;
   cursor: none;
 }
-
+.sbox .mark{
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  height: 2vh;
+  width: 2vh;
+  border-radius: 50%;
+ 
+}
+.mark img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 /* Image Filters for Dark Mode/Light Mode consistency */
 body:not(.dark) .sbox img { filter: brightness(0.9); } 
+/* --- Projects ---*/
+.project {
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+
+.ProjectTitle h1 {
+    font-size: clamp(30px, 5vw, 65px) !important; /* Override inline */
+    text-align: center;
+    
+}
+.projectbody{
+ border: 1px solid #007A3D;
+  height: 80%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  
+}
+.pbox{
+  height: 90%;
+  width:25%;
+  border: 1px solid #007a3d;
+  border-radius: 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap:5px;
+  padding: 10px;
+  background-color: #171b67;
+  color: #E6F1EC;
+}
+.ptop{
+  width:100%;
+  /* background-color: red; */
+  object-fit: cover;
+  padding: 10px
+}
+.ptop img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px  20px 0 0;
+}
+.pbot{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+}
+.pt{
+  height: 30%;
+  width: 100%;
+  font-size: 17px;
+  text-align: center;
+}
+.pdes{
+  text-align: justify;
+  padding: 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- CONTACT SECTION --- */
 .contact {
