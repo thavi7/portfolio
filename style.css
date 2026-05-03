@@ -510,7 +510,14 @@ body.dark .apic, body.dark .bpic { background-color: #F5F7FA; }
 .bhead { border-right: 3px solid #007a3d; border-left: none; } /* Switch border for logic */
 
 .ahead h1, .bhead h1 {font-size:50px; color: #9b5de5; }
-.ahead p, .bhead p { font-size: 1.1rem; text-align: justify; margin-top: 15px; }
+.ahead p, .bhead p { font-size: 1.1rem; text-align: justify; margin-top: 15px; color: white; }
+
+.ahead .b {
+  color: white; 
+}
+.ahead span{
+  color: rgb(185, 6, 245);
+}
 
 /* Timeline */
 .padd { padding-left: 30px; margin-top: 20px; border-left: 3px solid #5dff4e; position: relative; }

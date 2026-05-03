@@ -201,7 +201,7 @@ let mm = gsap.matchMedia();
 /* DESKTOP */
 mm.add("(min-width: 1000px)", () => {
   gsap.to(".home .yp .b", {
-    color: "#A855F7",
+    color: "rgb(185, 6, 245)",
     scale: 1,
     stagger: 0.15,
     scrollTrigger: {
@@ -218,7 +218,7 @@ mm.add("(min-width: 1000px)", () => {
 /* MOBILE */
 mm.add("(max-width: 999px)", () => {
   gsap.to(".home .yp .b", {
-    color: "#A855F7",
+    color: "rgb(185, 6, 245)",
     scale: 1,
     stagger: 0.08,
     duration: 0.4,
@@ -237,7 +237,7 @@ scrollpara()
 
 function scrollabout(){
  const yp=document.querySelector('.atop p')
-const splittedp=yp.textContent.split(' ')
+const splittedp = yp.innerHTML.split(' ')
 let clutter=''
 console.log(splittedp);
 splittedp.forEach(function(elem){
